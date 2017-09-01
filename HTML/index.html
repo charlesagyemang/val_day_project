@@ -11,7 +11,7 @@
 <html>
  	<head>
 		<title>Elementy - Responsive HTML5 Template</title>
-		<meta charset=utf-8 >
+		<meta charset="utf-8">
 		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 		<meta name="robots" content="index, follow" > 
 		<meta name="keywords" content="HTML5 Template" > 
@@ -29,12 +29,15 @@
 		
 <!-- CSS -->
     <!--  GOOGLE FONT -->		
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,300%7COpen+Sans:400,300,700" rel="stylesheet" type="text/css">
     
     <!-- REVOSLIDER CSS SETTINGS -->
     
     <!-- REVOLUTION STYLE SHEETS -->
     <link href="revo-slider/css/settings-custom.css" rel="stylesheet" type="text/css">
+    
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link rel="stylesheet" type="text/css" href="revo-slider/css/navigation-skins/hermes-custom.css">
     
     <!--  BOOTSTRAP -->
 		<link rel="stylesheet" href="css/bootstrap.min.css"> 
@@ -46,7 +49,7 @@
 		<link rel="stylesheet" href="css/style.css" >
 	
     <!-- ANIMATE -->	
-		<link rel='stylesheet' href="css/animate.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
 		
     <!-- IE Warning CSS -->
 		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
@@ -66,7 +69,7 @@
 		<![endif]-->
 		
 	</head>
-	<body class="font-montserrat">
+	<body>
 	
 		<!-- LOADER -->	
 		<div id="loader-overflow">
@@ -79,11 +82,11 @@
 				<!--[if lte IE 8]>
 				<div id="ie-container">
 					<div id="ie-cont-close">
-						<a href='#' onclick='javascript&#058;this.parentNode.parentNode.style.display="none"; return false;'><img src='images/ie-warn/ie-warning-close.jpg' style='border: none;' alt='Close'></a>
+						<a href="#" onclick="javascript&#058;this.parentNode.parentNode.style.display="none"; return false;"><img src="images/ie-warn/ie-warning-close.jpg" style="border: none;" alt="Close"></a>
 					</div>
 					<div id="ie-cont-content" >
 						<div id="ie-cont-warning">
-							<img src='images/ie-warn/ie-warning.jpg' alt='Warning!'>
+							<img src="images/ie-warn/ie-warning.jpg" alt="Warning!">
 						</div>
 						<div id="ie-cont-text" >
 							<div id="ie-text-bold">
@@ -94,17 +97,18 @@
 							</div>
 						</div>
 						<div id="ie-cont-brows" >
-							<a href='http://www.firefox.com' target='_blank'><img src='images/ie-warn/ie-warning-firefox.jpg' alt='Download Firefox'></a>
-							<a href='http://www.opera.com/download/' target='_blank'><img src='images/ie-warn/ie-warning-opera.jpg' alt='Download Opera'></a>
-							<a href='http://www.apple.com/safari/download/' target='_blank'><img src='images/ie-warn/ie-warning-safari.jpg' alt='Download Safari'></a>
-							<a href='http://www.google.com/chrome' target='_blank'><img src='images/ie-warn/ie-warning-chrome.jpg' alt='Download Google Chrome'></a>
+							<a href="http://www.firefox.com" target="_blank"><img src="images/ie-warn/ie-warning-firefox.jpg" alt="Download Firefox"></a>
+							<a href="http://www.opera.com/download/" target="_blank"><img src="images/ie-warn/ie-warning-opera.jpg" alt="Download Opera"></a>
+							<a href="http://www.apple.com/safari/download/" target="_blank"><img src="images/ie-warn/ie-warning-safari.jpg" alt="Download Safari"></a>
+							<a href="http://www.google.com/chrome" target="_blank"><img src="images/ie-warn/ie-warning-chrome.jpg" alt="Download Google Chrome"></a>
 						</div>
 					</div>
 				</div>
 				<![endif]-->
 				
-				<!-- HEADER 1 FONT MONTSERRAT BLACK TRANSPARENT -->
-				<header id="nav" class="header header-1">
+				<!-- HEADER 1 FONT WHITE TRANSPARENT -->
+        <div class="header-black-bg"></div> <!-- NEED FOR TRANSPARENT HEADER ON MOBILE -->
+				<header id="nav" class="header header-1 header-black">
 				  <div class="header-wrapper">
 					<div class="container-m-30 clearfix">
 					  <div class="logo-row">
@@ -113,7 +117,7 @@
 						<div class="logo-container-2">
                 <div class="logo-2">
                   <a href="index.html" class="clearfix">
-                    <img src="images/logo.png" class="logo-img" alt="Logo">
+                    <img src="images/logo-white.png" class="logo-img" alt="Logo">
                   </a>
                 </div>
               </div>
@@ -132,7 +136,7 @@
 						  <div class="container-m-30 clearfix">	
 						  
 								<!-- MAIN MENU -->
-								<div id="main-menu" class="font-montserrat">
+								<div id="main-menu">
 								  <div class="navbar navbar-default" role="navigation">
 
                     <!-- MAIN MENU LIST -->
@@ -146,8 +150,8 @@
                           <li class="parent">
                             <a class="current open-sub" href="#">Home</a>
                             <ul class="sub">
-                            <li><a class="current" href="index.html">Home 1</a></li>
-                            <li><a href="index2.html">Home 2</a></li>
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a class="current" href="index2.html">Home 2</a></li>
                             <li><a href="index3.html">Home 3</a></li>
                             <li><a href="index4.html">Home 4</a></li>
                             <li><a href="index5.html">Home 5</a></li>
@@ -599,28 +603,30 @@
 				  
 				</header>
        
-        <!-- SLIDER Revo Hero 1 FONT MONTSERRAT -->
-        <div class="relative">
+        <!-- SLIDER Revo 2 -->
+        <div id="index-link" class="relative" style="overflow:hidden;">
 
             <div class="rev_slider_wrapper fullscreen-container" id="rev_slider_280_1_wrapper" style="background-color:#fff;padding:0px;">
-                <!-- START REVOLUTION SLIDER 5.1.4 fullscreen mode -->
-                <div class="rev_slider fullscreenbanner" data-version="5.1.4" id="rev_slider_280_1" style="display:none;">
+            
+                <!-- START REVOLUTION SLIDER fullscreen mode -->
+                <div id="rev_slider_202_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.1.1RC">
                     <ul>
-                        <!-- SLIDE -->
-                        <li data-description="" data-easein="Power2.easeInOut" data-easeout="default" data-index="rs-898" data-masterspeed="1500" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-title="Slide" data-transition="fade">
+                        <!-- SLIDE  -->
+                        <li data-index="rs-672" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/revo-slider/focus-180x110.jpg" data-rotate="0" data-saveperformance="off" data-title="WE FOCUSED" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img alt="img" class="rev-slidebg" data-bgparallax="12" data-bgposition="center center" data-duration="30000" data-ease="Linear.easeNone" data-no-retina="" src="images/revo-slider/concept1.jpg">
+                            <img src="images/revo-slider/loveisintheair.jpeg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                             <!-- LAYERS -->
+
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption  font-black tp-resizeme rs-parallaxlevel-6" id="slide-898-layer-1" style="z-index: 8; white-space: nowrap;"
-                            data-fontsize="['98','88','80','60']" 
+                            <div class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6" id="slide-898-layer-1" style="z-index: 8; white-space: nowrap;"
+                            data-fontsize="['90','70','62','52']" 
                             data-fontweight="600" 
                             data-height="none" 
-                            data-lineheight="['112','92','90','72']" 
+                            data-lineheight="['102','82','74','64']" 
                             data-responsive_offset="on" 
                             data-splitin="none" 
                             data-splitout="none" 
-                            data-start="500" 
+                            data-start="1050" 
                             data-transform_idle="o:1;" 
                             data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
                             data-transform_out="y:[100%];s:1000;s:1000;" 
@@ -631,20 +637,92 @@
                             data-x="['left','left','left','left']" 
                             data-hoffset="['40','40','40','20']" 
                             data-y="['center','center','center','center']" 
-                            data-voffset="['-100','-90','-90','-70']">
+                            data-voffset="['-30','-30','-30','-30']">
+                              We create<br>design focused
+                              <span class="typer" id="main" data-words="great,fun,vansolo,easy" data-colors="red" data-delay="100" data-deleteDelay="1000"></span>
+                              <span class="cursor" data-owner="main"></span>
+                            </div> 
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6" id="slide-898-layer-2" style="z-index: 8; white-space: nowrap;"
+                            data-fontsize="['24','24','24','20']" 
+                            data-fontweight="300" 
+                            data-height="none" 
+                            data-lineheight="['40','40','40','40']" 
+                            data-responsive_offset="on" 
+                            data-splitin="none" 
+                            data-splitout="none" 
+                            data-start="1450" 
+                            data-transform_idle="o:1;" 
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                            data-transform_out="y:[100%];s:1000;s:1000;" 
+                            data-mask_in="x:0px;y:0px;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                            data-whitespace="nowrap" 
+                            data-width="none" 
+                            data-x="['left','left','left','left']" 
+                            data-hoffset="['40','40','40','20']" 
+                            data-y="['center','center','center','center']" 
+                            data-voffset="['90','80','70',50']">
+                              on startups, creatives and small businesses
+                            </div>                            
+                            
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-673" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/revo-slider/traincover-180x110.jpg" data-rotate="0" data-saveperformance="off" data-title="CREATIVE STUDIO" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="images/revo-slider/traincover.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- BACKGROUND VIDEO LAYER -->
+                            <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="video/Broadway.mp4" data-videopreload="preload" data-videoloop="loop" data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"></div>
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-9" id="slide-696-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeOut;" data-transform_out="rZ:0deg;sX:0.7;sY:0.7;opacity:0;s:500;e:Back.easeIn;s:500;e:Back.easeIn;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1850" data-responsive_offset="on" style="z-index: 7;">
+                                <div class="rs-looped rs-pulse" data-easing="Power1.easeInOut" data-speed="3" data-zoomstart="0.98" data-zoomend="1"><img src="images/revo-slider/dummy.png" alt="creative studio" width="1400" height="1200" data-ww="['700px','700px','700px','350']" data-hh="['600px','600px','600px','300']" data-lazyload="images/revo-slider/creativestudio.png" data-no-retina>
+                                </div>
+                            </div>
+
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-674" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/revo-slider/piramid-180x110.jpg" data-rotate="0" data-saveperformance="off" data-title="BRANDING" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="images/revo-slider/piramid.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6" id="slide-899-layer-1" style="z-index: 8; white-space: nowrap;"
+                            data-fontsize="['98','78','70','60']" 
+                            data-fontweight="600" 
+                            data-height="none" 
+                            data-lineheight="['112','92','84','72']" 
+                            data-responsive_offset="on" 
+                            data-splitin="none" 
+                            data-splitout="none" 
+                            data-start="1050" 
+                            data-transform_idle="o:1;" 
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+                            data-transform_out="y:[100%];s:1000;s:1000;" 
+                            data-mask_in="x:0px;y:0px;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                            data-whitespace="nowrap" 
+                            data-width="none" 
+                            data-x="['left','left','left','left']" 
+                            data-hoffset="['40','40','40','20']" 
+                            data-y="['center','center','center','center']" 
+                            data-voffset="['-100','-90','-80','-70']">
                               Branding
                             </div>
 
                             <!-- LAYER NR. 2 -->
-                            <div class="tp-caption  font-black tp-resizeme rs-parallaxlevel-6" id="slide-898-layer-2" style="z-index: 8; white-space: nowrap;"
-                            data-fontsize="['98','88','80','60']" 
+                            <div class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6" id="slide-899-layer-2" style="z-index: 8; white-space: nowrap;"
+                            data-fontsize="['98','78','70','60']" 
                             data-fontweight="600" 
                             data-height="none" 
-                            data-lineheight="['112','92','90','72']" 
+                            data-lineheight="['112','92','84','72']" 
                             data-responsive_offset="on" 
                             data-splitin="none" 
                             data-splitout="none" 
-                            data-start="800" 
+                            data-start="1350" 
                             data-transform_idle="o:1;" 
                             data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
                             data-transform_out="y:[100%];s:1000;s:1000;" 
@@ -660,15 +738,15 @@
                             </div>
 
                             <!-- LAYER NR. 3 -->
-                            <div class="tp-caption  font-black tp-resizeme rs-parallaxlevel-6" id="slide-898-layer-3" style="z-index: 8; white-space: nowrap;"
-                            data-fontsize="['98','88','80','60']" 
+                            <div class="tp-caption font-poppins font-white tp-resizeme rs-parallaxlevel-6" id="slide-899-layer-3" style="z-index: 8; white-space: nowrap;"
+                            data-fontsize="['98','78','70','60']" 
                             data-fontweight="600" 
                             data-height="none" 
-                            data-lineheight="['112','92','90','72']" 
+                            data-lineheight="['112','92','84','72']" 
                             data-responsive_offset="on" 
                             data-splitin="none" 
                             data-splitout="none" 
-                            data-start="1100" 
+                            data-start="1650" 
                             data-transform_idle="o:1;" 
                             data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
                             data-transform_out="y:[100%];s:1000;s:1000;" 
@@ -679,9 +757,10 @@
                             data-x="['left','left','left','left']" 
                             data-hoffset="['40','40','40','20']" 
                             data-y="['center','center','center','center']" 
-                            data-voffset="['100','90','90','70']">
+                            data-voffset="['100','90','80','70']">
                               marketing<span class="red-dot">.</span>
                             </div>
+
                         </li>
                     </ul>
                     <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
@@ -690,7 +769,7 @@
             <!-- END REVOLUTION SLIDER -->
 
           <!-- SCROLL ICON -->
-          <div class="local-scroll-cont">
+          <div class="local-scroll-cont font-white">
             <a href="#about" class="scroll-down smooth-scroll">
               <div class="icon icon-arrows-down"></div>
             </a>  
@@ -698,220 +777,191 @@
           
         </div>
         
-				<!-- FEATURES 11 WE ARE CREATIVE FONT MONTSERRAT -->
+				<!-- FEATURES 15 WE ARE CREATIVE -->
 				<div id="about" class="page-section">
-					<div class="container-fluid fes1-cont">
-            
-							<div class="col-md-4 fes1-img-cont wow fadeInUp mb-20">
-								<img src="images/fes11.jpg" alt="img" >
-							</div>
+					<div class="container fes1-cont">
 
-							<div class="col-lg-8 col-md-8 mt-fes11">
+            <div class="row">
+
+              <div class="col-lg-4 col-md-4">
+                <div class="fes1-main-title-cont wow fadeInUp">
+                  <div class="fes15-title-32">
+                    About<br>Our Studio
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-offset-1 col-lg-7 col-md-8">
+                    
                 <div class="row">
-
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="fes1-main-title-cont wow fadeInUp">
-                      <div class="fes1-title-50 font-montserrat">
-                        <strong>We are<br>creative</strong>
+                    
+                  <div class="col-md-6 col-sm-6 pb-20">
+                    <div class="fes11-box wow fadeIn" >
+                      <div class="fes1-box-icon">
+                        <div class="icon icon-basic-mixer2"></div>
                       </div>
-                      <div class="line-5-100"></div>
+                      <h3>Fully Responsive</h3>
                     </div>
                   </div>
-
-                  <div class="col-lg-8 col-md-12">
-                        
-                    <div class="row">
-                        
-                      <div class="col-md-6 col-sm-6">
-                        <div class="fes11-box wow fadeIn" >
-                          <div class="fes1-box-icon">
-                            <div class="icon icon-basic-mixer2"></div>
-                          </div>
-                          <h3 class="font-montserrat"><strong>Fully Responsive</strong></h3>
-                          <p>Sed ut perspiciatis nat bacus antium</p>
-                        </div>
-                      </div>
-                          
-                      <div class="col-md-6 col-sm-6">
-                        <div class="fes11-box wow fadeIn" data-wow-delay="200ms">
-                          <div class="fes1-box-icon">
-                            <div class="icon icon-basic-lightbulb"></div>
-                          </div>
-                          <h3 class="font-montserrat" ><strong>Retina Ready</strong></h3>
-                          <p>Sed ut perspiciatis nat bacus antium</p>
-                        </div>
-                      </div>
-                          
-                    </div>
-                        
-                    <div class="row">
-                        
-                      <div class="col-md-6 col-sm-6">
-                        <div class="fes11-box wow fadeIn" data-wow-delay="400ms">
-                          <div class="fes1-box-icon">
-                            <div class="icon icon-basic-helm"></div>
-                          </div>
-                          <h3 class="font-montserrat"><strong>Unique Design</strong></h3>
-                          <p>Sed ut perspiciatis nat bacus antium</p>
-                        </div>
-                      </div>
-                          
-                      <div class="col-md-6 col-sm-6">
-                        <div class="fes11-box wow fadeIn"  data-wow-delay="600ms">
-                          <div class="fes1-box-icon">
-                            <div class="icon icon-basic-settings"></div>
-                          </div>
-                          <h3 class="font-montserrat"><strong>Customizable</strong></h3>
-                          <p>Sed ut perspiciatis nat bacus antium</p>
-                        </div>
-                      </div>
                       
-                    </div>                    
-                        
+                  <div class="col-md-6 col-sm-6 pb-20">
+                    <div class="fes11-box wow fadeIn" data-wow-delay="200ms">
+                      <div class="fes1-box-icon">
+                        <div class="icon icon-basic-lightbulb"></div>
+                      </div>
+                      <h3>Retina Ready</h3>
+                    </div>
+                  </div>
+                      
+                </div>
+                    
+                <div class="row">
+                    
+                  <div class="col-md-6 col-sm-6 pb-20">
+                    <div class="fes11-box wow fadeIn" data-wow-delay="400ms">
+                      <div class="fes1-box-icon">
+                        <div class="icon icon-basic-helm"></div>
+                      </div>
+                      <h3>Unique Design</h3>
+                    </div>
+                  </div>
+                      
+                  <div class="col-md-6 col-sm-6 pb-20">
+                    <div class="fes11-box wow fadeIn"  data-wow-delay="600ms">
+                      <div class="fes1-box-icon">
+                        <div class="icon icon-basic-settings"></div>
+                      </div>
+                      <h3>Customizable</h3>
+                    </div>
                   </div>
                   
-                </div>
-							</div>
-						
+                </div>                    
+                    
+              </div>
+              
+            </div>
+							
 					</div>
 				</div>
   
-				<!-- FEATURES 12 HALF COLORED FONT MONTSERRAT -->
-				<div class="page-section">
-					<div class="container-fluid">
-						<div data-equal=".equal-height" class="row row-sm-fix">
-            
-							<div class="col-md-6 fes12-img equal-height" style="background-image: url(images/fes12-1.jpg)">
-                <div class="fes2-main-text-cont text-white">
-                  <div class="fes2-title-45 font-montserrat text-white">
-                    <strong>Optimized for<br>mobile</strong>
-                  </div>
-                  <div class="line-5-100 bg-white"></div>
-                  <div class="fes2-text-cont">Sed ut perspiciatis unde omnis iste nat eror acus antium que. Asperiores, ea velit enim labore doloribus.</div>
-                  <div class="fes12-btn-cont mt-30">
-                  	<a class="button medium thin white btn-4 btn-4cc" href="#"><span class="button-text-anim"><strong>Read More</strong></span><span aria-hidden="true" class="button-icon-anim arrow_right"></span></a>
-                  </div>
-                </div>
-							</div>
-              
-							<div class="col-md-6 fes12-img equal-height" style="background-image: url(images/fes12-2.jpg)">
-                <div class="fes2-main-text-cont text-black">
-                  <div class="fes2-title-45 font-montserrat">
-                    <strong>Powerful<br>Performance</strong>
-                  </div>
-                  <div class="line-5-100"></div>
-                  <div class="fes2-text-cont">Sed ut perspiciatis unde omnis iste nat eror acus antium que. Asperiores, ea velit enim labore doloribus.</div>
-                  <div class="fes12-btn-cont mt-30">
-                  	<a class="button medium thin gray btn-4 btn-4cc" href="#"><span class="button-text-anim"><strong>Read More</strong></span><span aria-hidden="true" class="button-icon-anim arrow_right"></span></a>
-                  </div>
-                </div>
-							</div>
-              
-						</div>
-					</div>
-				</div>
-
-				<!-- FEATURES 13 OUR SERVICES FONT MONTSERRAT -->
-				<div class="page-section pt-160-b-120-cont">
-					<div class="container">
-            <div class="row">
-            
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn">
-								  <h2 class="section-title2 font-montserrat"><strong>Our Services</strong></h2>
-                  <div class="line-3-75"></div>
-								</div>
-							</div>            
-							<div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn" data-wow-delay="200ms">
-								  <div class="fes13-title-cont" >
-								  	<div class="fes13-box-icon">
-								  		<div class="icon icon-basic-settings"></div>
-								  	</div>
-								  	<h3 class="font-montserrat"><strong>Development</strong></h3>
-								  </div>
-								  <div>
-								    Maecenas luctus nisi in sem fermentum blat. In nec  elit solliudin, elementum, dictum pur quam volutpat suscipit antena. 
-								  </div>
-								</div>
-							</div>
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn" data-wow-delay="400ms">
-								  <div class="fes13-title-cont" >
-								  	<div class="fes13-box-icon">
-								  		<div class="icon icon-basic-share"></div>
-								  	</div>
-								  	<h3 class="font-montserrat"><strong>Production</strong></h3>
-								  </div>
-								  <div>
-								    Seductio maesto nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-								  </div>
-								</div>
-							</div>
-              
-						</div>
-						<div class="row">
-            
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn" data-wow-delay="600ms">
-								  <div class="fes13-title-cont" >
-								  	<div class="fes13-box-icon">
-								  		<div class="icon icon-basic-target"></div>
-								  	</div>
-								  	<h3 class="font-montserrat"><strong>Branding</strong></h3>
-								  </div>
-								  <div>
-								    Donec vel luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-								  </div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn" data-wow-delay="800ms" >
-								  <div class="fes13-title-cont" >
-								  	<div class="fes13-box-icon">
-								  		<div class="icon icon-basic-globe"></div>
-								  	</div>
-								  	<h3 class="font-montserrat"><strong>Web Design</strong></h3>
-								  </div>
-								  <div>
-								    Lorem luctus antena at nisi in sem blandit. In nec elit soltudin, elementum odio et, dictum quam a volutpat elementum. 
-								  </div>
-								</div>
-							</div>
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <div class="fes4-box wow fadeIn" data-wow-delay="1000ms">
-								  <div class="fes13-title-cont" >
-								  	<div class="fes13-box-icon">
-								  		<div class="icon icon-basic-picture"></div>
-								  	</div>
-								  	<h3 class="font-montserrat"><strong>Photography</strong></h3>
-								  </div>
-								  <div>
-								    Fermentum nisi in sem fertum blat. In elit soldin, elemtum, arenam pur quam volutpat suscipit dictum pur quam.
-								  </div>
-								</div>
-							</div>              
-						
-            </div>
-					</div>
-				</div>
-         
-        <!-- PORTFOLIO 3 (4 COLS, MASONRY) FONT MONTSERRAT -->
+        <!-- FEATURES 16 TABS 2 -->
         <div class="page-section">
-          <div class="relative bg-gray">
+          <div class="bg-yellow mb-100">
+            <div class="container">
+              
+              <!-- TABS NAV -->
+              <div class="row">
+                <div class="col-md-12">
+                  
+                  <ul class="fes14-nav-tabs nav nav-tabs bootstrap-tabs">
+                    <li class="active"><a href="#web-design" class="fes14-nav-a" data-toggle="tab"><div class="tab-nav-icon icon icon-basic-laptop"></div><div class="tab-nav-text">Web Design</div></a></li>
+                    <li><a href="#ui-design"  class="fes14-nav-a" data-toggle="tab"><div class="tab-nav-icon icon icon-software-horizontal-align-center"></div><div class="tab-nav-text">UI/UX Design</div></a></li>
+                    <li><a href="#graphic-design"  class="fes14-nav-a" data-toggle="tab"><div class="tab-nav-icon icon icon-basic-sheet-pen"></div><div class="tab-nav-text">Graphic Design</div></a></li>
+                    <li><a href="#branding-tab"  class="fes14-nav-a" data-toggle="tab"><div class="tab-nav-icon icon icon-ecommerce-diamond"></div><div class="tab-nav-text">Branding</div></a></li>
+                    <li><a href="#development-tab"  class="fes14-nav-a" data-toggle="tab"><div class="tab-nav-icon icon icon-basic-archive-full"></div><div class="tab-nav-text">Development</div></a></li>
+                  </ul>
+                  
+                </div>
+              </div>
+              
+              <!-- TABS CONTENT & IMAGES -->
+              <div class="row">
+              
+                <!-- TABS CONTENT -->
+                <div class="col-md-6">
+                  <div class="fes14-tab-content tab-content">
+                  
+                    <!-- TAB 1 -->
+                    <div class="tab-pane fade in active" id="web-design">
+                      <h1 class="fes14-tab-title"><strong>Elementy</strong></h1>
+                      <h2 class="fes14-tab-sub-title"><strong>template for your business</strong></h2>
+                      <p class="fes14-tab-text mb-60">
+                        Nulla sed vehicula leo. Nam volutpat dapibus nisi sed ultrices. Proin ullamcorper eget ex a cursus. In sed turpis at orci laoreet ultrices et vitae urna. 
+                      </p>
+                      <div class="fes12-btn-cont mt-30">
+                        <a class="button medium rounded gray" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">PURCHASE NOW</a>
+                      </div>
+                    </div>
+                    
+                    <!-- TAB 2 -->
+                    <div class="tab-pane fade" id="ui-design">
+                      <h1 class="fes14-tab-title"><strong>UI/UX Design</strong></h1>
+                      <h2 class="fes14-tab-sub-title"><strong>enhancing user satisfaction</strong></h2>
+                      <p class="fes14-tab-text mb-60">
+                        Nulla sed vehicula leo. Nam volutpat dapibus nisi sed ultrices. Proin ullamcorper eget ex a cursus. In sed turpis at orci laoreet ultrices et vitae urna. 
+                      </p>
+                      <div class="fes12-btn-cont mt-30">
+                        <a class="button medium rounded gray" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">PURCHASE NOW</a>
+                      </div>
+                    </div>
+                    
+                    <!-- TAB 3 -->
+                    <div class="tab-pane fade" id="graphic-design">
+                      <h1 class="fes14-tab-title"><strong>Graphic design</strong></h1>
+                      <h2 class="fes14-tab-sub-title"><strong>process of visual communication</strong></h2>
+                      <p class="fes14-tab-text mb-60">
+                        Nulla sed vehicula leo. Nam volutpat dapibus nisi sed ultrices. Proin ullamcorper eget ex a cursus. In sed turpis at orci laoreet ultrices et vitae urna. 
+                      </p>
+                      <div class="fes12-btn-cont mt-30">
+                        <a class="button medium rounded gray" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">PURCHASE NOW</a>
+                      </div>
+                    </div>
+                    
+                    <!-- TAB 4 -->
+                    <div class="tab-pane fade" id="branding-tab">
+                      <h1 class="fes14-tab-title"><strong>Branding</strong></h1>
+                      <h2 class="fes14-tab-sub-title"><strong>creating and launching brands</strong></h2>
+                      <p class="fes14-tab-text mb-60">
+                        Nulla sed vehicula leo. Nam volutpat dapibus nisi sed ultrices. Proin ullamcorper eget ex a cursus. In sed turpis at orci laoreet ultrices et vitae urna. 
+                      </p>
+                      <div class="fes12-btn-cont mt-30">
+                        <a class="button medium rounded gray" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">PURCHASE NOW</a>
+                      </div>
+                    </div>
+                    
+                    <!-- TAB 5 -->
+                    <div class="tab-pane fade" id="development-tab">
+                      <h1 class="fes14-tab-title"><strong>Apps & sites</strong></h1>
+                      <h2 class="fes14-tab-sub-title"><strong>apps & web sites development</strong></h2>
+                      <p class="fes14-tab-text mb-60">
+                        Nulla sed vehicula leo. Nam volutpat dapibus nisi sed ultrices. Proin ullamcorper eget ex a cursus. In sed turpis at orci laoreet ultrices et vitae urna. 
+                      </p>
+                      <div class="fes12-btn-cont mt-30">
+                        <a class="button medium rounded gray" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">PURCHASE NOW</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                
+                <!-- IMAGES -->
+                <div class="col-md-6 fes9-img-cont clearfix">
+                  <div class="fes16-img-center clearfix">
+                    <img src="images/mac.png" alt="img" class="wow fadeInUp" data-wow-delay="150ms" data-wow-duration="1s">
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- PORTFOLIO SECTION (3 COLS, WIDE) -->
+        <div id="portfolio-link" class="page-section">
+          <div class="relative">
           
             <div class="container">
               <div class="pt-80-b-30-cont">
               
                 <!-- TITLE -->
               	<div class="mb-10">
-              	  <h2 class="section-title2 font-montserrat"><strong>Recent Works</strong></h2>
+              	  <h2 class="section-title2 font-light">Recent Works</h2>
               	</div>
    
            			<!-- PORTFOLIO FILTER -->                    
            			<div class="pl-xxs-10">
                 
-           			  <ul class="port-filter">
+           			  <ul class="port-filter font-poppins">
            			  	<li>
            			  		<a href="#" class="filter active" data-filter="*">All Projects</a>
            			  	</li>
@@ -932,32 +982,32 @@
             </div>
             
             <!-- ITEMS GRID -->
-            <ul class="port-grid masonry clearfix" id="items-grid">
+            <ul class="port-grid port-grid-3 clearfix" id="items-grid">
               
               <!-- Item -->
               <li class="port-item mix design">
                 <a href="portfolio-single1.html">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images/portfolio/projects-1.jpg" alt="img" >
+                    <img class="port-main-img" src="images/portfolio/projects-1-3col.jpg" alt="img" >
                   </div>
                   <div class="port-overlay-cont">
                     <div class="port-title-cont2">
-                      <h3 class="font-montserrat">Minimalism</h3>
+                      <h3>Minimalism</h3>
                       <span>design</span>
                     </div>
                   </div>
                 </a>
               </li>
                                            
-              <!-- Item big -->
+              <!-- Item -->
               <li class="port-item mix photography">
                 <a href="portfolio-single1.html">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images/portfolio/projects-2-big.jpg" alt="img" >
+                    <img class="port-main-img" src="images/portfolio/projects-2-3col.jpg" alt="img" >
                   </div>
                   <div class="port-overlay-cont">
                     <div class="port-title-cont2">
-                      <h3 class="font-montserrat">Iceland Beach</h3>
+                      <h3>Iceland Beach</h3>
                       <span>photography</span>
                     </div>
                   </div>
@@ -968,41 +1018,26 @@
               <li class="port-item mix photography">
                 <a href="portfolio-single1.html">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images/portfolio/projects-3.jpg" alt="img" >
+                    <img class="port-main-img" src="images/portfolio/projects-3-3col.jpg" alt="img" >
                   </div>
                   <div class="port-overlay-cont">
                     <div class="port-title-cont2">
-                      <h3 class="font-montserrat">Metal Bridge</h3>
+                      <h3>Metal Bridge</h3>
                       <span>photography</span>
                     </div>
                   </div>
                 </a>
               </li>
-
-              <!-- Item -->
-              <li class="port-item mix design">
-                <a href="portfolio-single1.html">
-                  <div class="port-img-overlay">
-                    <img class="port-main-img" src="images/portfolio/projects-7.jpg" alt="img" >
-                  </div>
-                  <div class="port-overlay-cont">
-                    <div class="port-title-cont2">
-                      <h3 class="font-montserrat">Brochure Design</h3>
-                      <span>design</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
                              
-              <!-- Item big -->
+              <!-- Item -->
               <li class="port-item mix photography">
                 <a href="portfolio-single1.html">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images/portfolio/projects-6-big.jpg" alt="img" >
+                    <img class="port-main-img" src="images/portfolio/projects-6-3col.jpg" alt="img" >
                   </div>
                   <div class="port-overlay-cont">
                     <div class="port-title-cont2">
-                      <h3 class="font-montserrat">Black White Surfer</h3>
+                      <h3>Black White Surfer</h3>
                       <span>photography</span>
                     </div>
                   </div>
@@ -1013,26 +1048,11 @@
               <li class="port-item mix development">
                 <a href="portfolio-single1.html">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images/portfolio/projects-4.jpg" alt="img" >
+                    <img class="port-main-img" src="images/portfolio/projects-4-3col.jpg" alt="img" >
                   </div>
                   <div class="port-overlay-cont">
                     <div class="port-title-cont2">
-                      <h3 class="font-montserrat">Minimalist Watches</h3>
-                      <span>development</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-                                     
-              <!-- Item big -->
-              <li class="port-item mix development">
-                <a href="portfolio-single1.html">
-                  <div class="port-img-overlay">
-                    <img class="port-main-img" src="images/portfolio/projects-17-big.jpg" alt="img" >
-                  </div>
-                  <div class="port-overlay-cont">
-                    <div class="port-title-cont2">
-                      <h3 class="font-montserrat">Architecture</h3>
+                      <h3>Minimalist Watches</h3>
                       <span>development</span>
                     </div>
                   </div>
@@ -1043,92 +1063,128 @@
               <li class="port-item mix photography">
                 <a href="portfolio-single1.html">
                   <div class="port-img-overlay">
-                    <img class="port-main-img" src="images/portfolio/projects-5.jpg" alt="img" >
+                    <img class="port-main-img" src="images/portfolio/projects-5-3col.jpg" alt="img" >
                   </div>
                   <div class="port-overlay-cont">
                     <div class="port-title-cont2">
-                      <h3 class="font-montserrat">Swimming Pool</h3>
+                      <h3>Swimming Pool</h3>
                       <span>photography</span>
                     </div>
                   </div>
                 </a>
               </li>
 
-              <!-- Item -->
-              <li class="port-item mix development">
-                <a href="portfolio-single1.html">
-                  <div class="port-img-overlay"><img class="port-main-img" src="images/portfolio/projects-8.jpg" alt="img" >
-                  </div>
-                  <div class="port-overlay-cont">
-                    <div class="port-title-cont2">
-                      <h3 class="font-montserrat">Spacesuit</h3>
-                      <span>development</span>
-                    </div>
-                  </div>
-                </a>
-              </li>
-  
             </ul>
           
           </div>
         </div>
         
-        <!-- VIEW MORE PROJECTS FONT MONTSERRAT -->
+        <!-- VIEW MORE PROJECTS  -->
         <div class="port-view-more-cont">
-          <a class="port-view-more font-montserrat" href="portfolio-masonry-4col.html">View More Projects</a>
+          <a class="port-view-more" href="portfolio-masonry-4col.html">View All Projects</a>
         </div>
-        <!-- END PORTFOLIO SECTION 1 -->
+        <!-- END PORTFOLIO SECTION -->
 
-				<!-- WORK PROCESS 2 FONT MONTSERRAT -->
-				<div class="container-fluid p-110-cont">
-					<div class="row">
-          
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="work-proc2-cont wow fadeIn"  >
-                <div class="work-proc2-icon-cont pos-l-12">
-                  01
-                </div>
-                <h3 class="font-montserrat"><strong>Planning</strong></h3>
-                <p>Maecenas luctus nisi in sem fermen blandit. In nec elit </p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="work-proc2-cont wow fadeIn" data-wow-delay="200ms">
-                <div class="work-proc2-icon-cont">
-                  02
-                </div>
-                <h3 class="font-montserrat"><strong>Developmen</strong></h3>
-                <p>Maecenas luctus nisi in sem fermen blandit. In nec elit </p>
-              </div>
-            </div>
- 
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="work-proc2-cont wow fadeIn" data-wow-delay="400ms">
-                <div class="work-proc2-icon-cont">
-                  03
-                </div>
-                <h3 class="font-montserrat"><strong>Launch</strong></h3>
-                <p>Maecenas luctus nisi in sem fermen blandit. In nec elit </p>
-              </div>
-            </div> 
-
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="work-proc2-a-cont wow fadeIn" data-wow-delay="600ms">
-                <a class="work-proc2-a" href="#">
-                  <div class="work-proc2-a-text font-montserrat">
-                    Let's work<br><span class="border-bot">together</span>
-                  </div>
-                  <div class="work-proc2-bg-block"></div>
-                </a>
-              </div>
-            </div>
+				<!-- FEATURES 17 OUR SERVICES 2 -->
+				<div id="services-link" class="page-section pt-160-b-120-cont">
+					<div class="container">
+            <div class="row">
             
-          </div>
+              <div class="col-md-12">
+                <div class="mb-70 wow fadeIn">
+								  <h2 class="section-title2 font-light text-center p-0">Our Services</h2>
+								</div>
+							</div>  
+              
+							<div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="mb-70 wow fadeIn">
+								  <div class="fes17-title-cont" >
+								  	<div class="fes17-box-icon">
+								  		<div class="icon icon-ecommerce-graph-increase"></div>
+								  	</div>
+								  	<h3>Marketing</h3>
+								  </div>
+								  <div class="text-center">
+								    Maecenas luctus nisi in sem fermentum blandit. In nec elit sollicitudin, elementum odio et, dictum purus. Proin malesuada quam a volutpat  
+								  </div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="mb-70 wow fadeIn" data-wow-delay="200ms">
+								  <div class="fes17-title-cont" >
+								  	<div class="fes17-box-icon">
+								  		<div class="icon icon-basic-settings"></div>
+								  	</div>
+								  	<h3>Development</h3>
+								  </div>
+								  <div class="text-center">
+								    Maecenas luctus nisi in sem fermentum blandit. In nec elit sollicitudin, elementum odio et, dictum purus. Proin malesuada quam a volutpat  
+								  </div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="mb-70 wow fadeIn" data-wow-delay="400ms">
+								  <div class="fes17-title-cont" >
+								  	<div class="fes17-box-icon">
+								  		<div class="icon icon-basic-share"></div>
+								  	</div>
+								  	<h3>Production</h3>
+								  </div>
+								  <div class="text-center">
+								    Maecenas luctus nisi in sem fermentum blandit. In nec elit sollicitudin, elementum odio et, dictum purus. Proin malesuada quam a volutpat  
+								  </div>
+								</div>
+							</div>
+              
+						</div>
+						<div class="row">
+            
+							<div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="mb-70 wow fadeIn" data-wow-delay="600ms">
+								  <div class="fes17-title-cont" >
+								  	<div class="fes17-box-icon">
+								  		<div class="icon icon-basic-target"></div>
+								  	</div>
+								  	<h3>Branding</h3>
+								  </div>
+								  <div class="text-center">
+								    Maecenas luctus nisi in sem fermentum blandit. In nec elit sollicitudin, elementum odio et, dictum purus. Proin malesuada quam a volutpat  
+								  </div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="mb-70 wow fadeIn" data-wow-delay="800ms">
+								  <div class="fes17-title-cont" >
+								  	<div class="fes17-box-icon">
+								  		<div class="icon icon-basic-globe"></div>
+								  	</div>
+								  	<h3>Web Design</h3>
+								  </div>
+								  <div class="text-center">
+								    Maecenas luctus nisi in sem fermentum blandit. In nec elit sollicitudin, elementum odio et, dictum purus. Proin malesuada quam a volutpat  
+								  </div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="mb-70 wow fadeIn" data-wow-delay="1000ms">
+								  <div class="fes17-title-cont" >
+								  	<div class="fes17-box-icon">
+								  		<div class="icon icon-basic-picture"></div>
+								  	</div>
+								  	<h3>Photography</h3>
+								  </div>
+								  <div class="text-center">
+								    Maecenas luctus nisi in sem fermentum blandit. In nec elit sollicitudin, elementum odio et, dictum purus. Proin malesuada quam a volutpat  
+								  </div>
+								</div>
+							</div>             
+						
+            </div>
+					</div>
 				</div>
-       
-        <!-- TESTIMONIALS CAROUSEL 3 FONT MONTSERRAT -->
-        <div class="pt-110-b-80-cont pb-md-80 owl-plugin fullwidth-slider owl-bg-black parallax-section font-white" style="background: url(images/work-proc-bg3.jpg);"  data-stellar-background-ratio="0.5" data-stellar-vertical-offset="50">
+                 
+        <!-- TESTIMONIALS CAROUSEL 3 -->
+        <div id="clients-link" class="pt-110-b-80-cont pb-md-80 owl-plugin fullwidth-slider owl-bg-black font-white" style="background: #5bd3be;" >
           
           <!-- Slide Item -->
           <div class="container">
@@ -1152,7 +1208,7 @@
                 
                 <div class="col-md-9">
                   <blockquote class="testimonial-3">
-                    <p class="font-montserrat font-white">Nunc nec dictum purus. Nam porttitor molestie dolor nec lacinia. Donec placerat magna erat, non eleifend neque convallis at. Morbi felis sem, molestie, blandit ac quam. Fusce aliquet, est at rhoncus aliquam vehicu.</p>
+                    <p class="font-white">Nunc nec dictum purus. Nam porttitor molestie dolor nec lacinia. Donec placerat magna erat, non eleifend neque convallis at. Morbi felis sem, molestie, blandit ac quam. Fusce aliquet blandit</p>
                   </blockquote>
                 </div>
                 
@@ -1182,7 +1238,7 @@
                 
                 <div class="col-md-9">
                   <blockquote class="testimonial-3">
-                    <p class="font-montserrat font-white">Donec euismod vulputate augue, ac sagittis lacus lobortis id. Donec varius velit eget interdum semper. Mauris quis nunc eget blandit ac quam elit finibus semper eu non tellus. Donec at eros sed ante. </p>
+                    <p class="font-white">Donec euismod vulputate augue, ac sagittis lacus lobortis id. Donec varius velit eget interdum semper. Mauris quis nunc eget blandit ac quam elit finibus semper eu non tellus. Donec at eros sed ante</p>
                   </blockquote>
                 </div>
                 
@@ -1212,7 +1268,7 @@
                 
                 <div class="col-md-9">
                   <blockquote class="testimonial-3">
-                    <p class="font-montserrat font-white">Etiam vestibulum risus et suscipit finibus. Morbi vitae ligula eget sem dignissim iaculis. Mauris blandit ac quam vitae velit quis arcu mollis pellentesque nec non magna. Pellentesque feu  turpis quis bibendum</p>
+                    <p class="font-white">Etiam vestibulum risus et suscipit finibus. Morbi vitae ligula eget sem dignissim iaculis. Mauris blandit ac quam vitae velit quis arcu mollis pellentesque nec non magna. Pellentesque feu</p>
                   </blockquote>
                 </div>
                 
@@ -1223,7 +1279,7 @@
         </div>
  
         <!-- CLIENTS 2 -->
-        <div class="page-section p-80-cont bg-gray">
+        <div class="page-section p-80-cont">
 					<div class="container">
           
             <div class="row">
@@ -1257,265 +1313,209 @@
           </div>
 				</div>
         
-				<!-- ADS 3 FONT MONTSERRAT -->
-				<div class="page-section">
-					<div class="container-fluid">
-						<div data-equal=".equal-height2"  class="row">
-							
-							<div class="col-md-6 pos-l-md-50pc equal-height2">
-								<div class="fes2-main-text-cont">
-									<div class="fes2-title-45 font-montserrat">
-										Easy to<br>
-										<strong>Customize</strong>
-									</div>
-									<div class="line-3-100"></div>
-									<div class="fes2-text-cont">Sed nec pretium velit integer cursus  pretium nulla molestie, eget scelerisque ante</div>
-                  <div class="mt-30">
-                    <a class="button medium gray" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel"><strong>BUY NOW</strong></a>
-                  </div>
-								</div>
-							</div>
-              
-              <div class="col-md-6 pos-r-md-50pc wow fadeInLeft equal-height2 ads3-img-cont">
-							
-								<div class="row row-sm-fix absolute pos-v-center pos-l-0" >
-                  <img src="images/fes-noute2.jpg" alt="img">
-                </div>
-				
-							</div>
-              
-						</div>
-					</div>
-				</div> 
-
-				<!-- ADS 4 FONT MONTSERRAT -->
-				<div class="page-section">
-					<div class="container-fluid">
-						<div data-equal=".equal-height3" class="row">
-							
-							<div class="col-md-6  equal-height3">
-								<div class="fes2-main-text-cont">
-									<div class="fes2-title-45 font-montserrat">
-										Powerful<br>
-										<strong>Options</strong>
-									</div>
-									<div class="line-3-100"></div>
-									<div class="fes2-text-cont">Sed nec pretium velit integer cursus  pretium nulla molestie, eget scelerisque ante</div>
-                  <div class="mt-30">
-                    <a class="button medium gray" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel"><strong>BUY NOW</strong></a>
-                  </div>
-								</div>
-							</div>
-              
-              <div class="col-md-6 wow fadeInRight equal-height3 ads3-img-cont">
-							
-								<div class="row row-sm-fix absolute pos-rb-0" >
-                  <img src="images/fes-watches.jpg" alt="img">
-                </div>
-							
-							</div>
-              
-						</div>
-					</div>
-				</div> 
-        
-        <!-- FEATURES 14 TABS FONT MONTSERRAT -->
-        <div class="page-section bg-yellow">
+        <!-- COUNTERS 2 -->
+        <div id="counter-1" class="page-section p-80-cont bg-gray">
           <div class="container">
-            
-            <!-- TABS NAV -->
-            <div class="row">
-            	<div class="col-md-12">
-                
-                <ul class="fes14-nav-tabs nav nav-tabs bootstrap-tabs">
-                  <li class="active"><a href="#web-design" class="fes14-nav-a" data-toggle="tab"><div class="tab-nav-icon icon icon-basic-laptop"></div><div class="tab-nav-text font-montserrat">Web Design</div></a></li>
-                  <li><a href="#ui-design"  class="fes14-nav-a" data-toggle="tab"><div class="tab-nav-icon icon icon-software-horizontal-align-center"></div><div class="tab-nav-text font-montserrat">UI/UX Design</div></a></li>
-                  <li><a href="#graphic-design"  class="fes14-nav-a" data-toggle="tab"><div class="tab-nav-icon icon icon-basic-sheet-pen"></div><div class="tab-nav-text font-montserrat">Graphic Design</div></a></li>
-                  <li><a href="#branding-tab"  class="fes14-nav-a" data-toggle="tab"><div class="tab-nav-icon icon icon-ecommerce-diamond"></div><div class="tab-nav-text font-montserrat">Branding</div></a></li>
-                  <li><a href="#development-tab"  class="fes14-nav-a" data-toggle="tab"><div class="tab-nav-icon icon icon-basic-archive-full"></div><div class="tab-nav-text font-montserrat">Development</div></a></li>
-                </ul>
-                
-              </div>
-            </div>
-            
-            <!-- TABS CONTENT & IMAGES -->
-            <div class="row">
-            
-              <!-- TABS CONTENT -->
-              <div class="col-md-6">
-                <div class="fes14-tab-content tab-content">
-                
-                  <!-- TAB 1 -->
-                  <div class="tab-pane fade in active" id="web-design">
-                    <h1 class="fes14-tab-title font-montserrat"><strong>Elementy</strong></h1>
-                    <h2 class="fes14-tab-sub-title font-montserrat"><strong>template for your business</strong></h2>
-                    <p class="fes14-tab-text mb-60">
-                      Nulla sed vehicula leo. Nam volutpat dapibus nisi sed ultrices. Proin ullamcorper eget ex a cursus. In sed turpis at orci laoreet ultrices et vitae urna. 
-                    </p>
-                    <div class="fes12-btn-cont mt-30">
-                      <a class="button medium thin gray" href="#"><strong>Choose Template</strong></a>
-                    </div>
-                  </div>
-                  
-                  <!-- TAB 2 -->
-                  <div class="tab-pane fade" id="ui-design">
-                    <h1 class="fes14-tab-title font-montserrat"><strong>UI/UX Design</strong></h1>
-                    <h2 class="fes14-tab-sub-title font-montserrat"><strong>enhancing user satisfaction</strong></h2>
-                    <p class="fes14-tab-text mb-60">
-                      Nulla sed vehicula leo. Nam volutpat dapibus nisi sed ultrices. Proin ullamcorper eget ex a cursus. In sed turpis at orci laoreet ultrices et vitae urna. 
-                    </p>
-                    <div class="fes12-btn-cont mt-30">
-                      <a class="button medium thin gray" href="#"><strong>Choose Template</strong></a>
-                    </div>
-                  </div>
-                  
-                  <!-- TAB 3 -->
-                  <div class="tab-pane fade" id="graphic-design">
-                    <h1 class="fes14-tab-title font-montserrat"><strong>Graphic design</strong></h1>
-                    <h2 class="fes14-tab-sub-title font-montserrat"><strong>process of visual communication</strong></h2>
-                    <p class="fes14-tab-text mb-60">
-                      Nulla sed vehicula leo. Nam volutpat dapibus nisi sed ultrices. Proin ullamcorper eget ex a cursus. In sed turpis at orci laoreet ultrices et vitae urna. 
-                    </p>
-                    <div class="fes12-btn-cont mt-30">
-                      <a class="button medium thin gray" href="#"><strong>Choose Template</strong></a>
-                    </div>
-                  </div>
-                  
-                  <!-- TAB 4 -->
-                  <div class="tab-pane fade" id="branding-tab">
-                    <h1 class="fes14-tab-title font-montserrat"><strong>Branding</strong></h1>
-                    <h2 class="fes14-tab-sub-title font-montserrat"><strong>creating and launching brands</strong></h2>
-                    <p class="fes14-tab-text mb-60">
-                      Nulla sed vehicula leo. Nam volutpat dapibus nisi sed ultrices. Proin ullamcorper eget ex a cursus. In sed turpis at orci laoreet ultrices et vitae urna. 
-                    </p>
-                    <div class="fes12-btn-cont mt-30">
-                      <a class="button medium thin gray" href="#"><strong>Choose Template</strong></a>
-                    </div>
-                  </div>
-                  
-                  <!-- TAB 5 -->
-                  <div class="tab-pane fade" id="development-tab">
-                    <h1 class="fes14-tab-title font-montserrat"><strong>Apps & sites</strong></h1>
-                    <h2 class="fes14-tab-sub-title font-montserrat"><strong>apps & web sites development</strong></h2>
-                    <p class="fes14-tab-text mb-60">
-                      Nulla sed vehicula leo. Nam volutpat dapibus nisi sed ultrices. Proin ullamcorper eget ex a cursus. In sed turpis at orci laoreet ultrices et vitae urna. 
-                    </p>
-                    <div class="fes12-btn-cont mt-30">
-                      <a class="button medium thin gray" href="#"><strong>Choose Template</strong></a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              
-              <!-- IMAGES -->
-              <div class="col-md-6 fes9-img-cont clearfix">
-                <div class="fes9-img-center clearfix">
-                  <img src="images/fes9-black.png" alt="img" class="wow fadeInUp" data-wow-delay="150ms" data-wow-duration="1s">
-                  <img src="images/fes9-white.png" alt="img" class=" wow fadeInUp" data-wow-delay="450ms" data-wow-duration="1s">
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
         
-        <!-- BLOG SECTION 3 FONT MONTSERRAT -->
-        <div class="page-section blog-sect3">
-          <div class="container p-140-cont">
-          
-            <!-- TITLE -->
-          	<div class="row">
-          		<div class="col-md-12">
-          			<h2 class="section-title2 font-montserrat text-center mb-45 p-0"><strong>Latest News</strong></h2>
-          		</div>
-          	</div>
-            
-            <!-- BG GRAY -->
-            <div class="bg-gray clearfix">
-            
-            	<!-- BLOG ROW -->
-              <div class="row">
+            <div  class="row text-center">
+                            
+              <!-- Item -->
+              <div class="col-xs-6 col-sm-3 border-none">
+                <div class="count-number">
+                  75
+                </div>
+                <div class="count-descr">
+                  <span class="count-title">Awards Winning</span>
+                </div>
+              </div>
               
-                <div class="col-md-6 pr-0">
-            			<div class="post2-prev-img">
-                    <a href="blog-single-sidebar-right.html"><img src="images/blog/blog-sect3-post-anim.gif" alt="img"></a>
-                  </div>
-           			</div>
-                
-              	<div class="col-md-6 pl-0">
-            			<div class="blog-sect3-text-cont">
-            			<div class="pos-v-center">
-            				<div class="post2-prev-title">
-                      <h3 class="font-montserrat"><a href="blog-single-sidebar-right.html">User Experience Design Best sources</a></h3>
-                    </div>
-            				<div class="post-prev-info">
-                      Jule 21, 2016<span class="slash-divider">/</span><a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">Michael Doe</a>
-                    </div>
-            			</div>
-            			</div>
-            		</div>
+              <!-- Item -->
+              <div class="col-xs-6 col-sm-3 border-none">
+                <div class="count-number">
+                 450
+                </div>
+                <div class="count-descr">
+                  <span class="count-title">Happy Clients</span>
+                </div>
+              </div>
               
+              <!-- Item -->
+              <div class="col-xs-6 col-sm-3 border-none">
+                <div class="count-number">
+                  151
+                </div>
+                <div class="count-descr">
+                  <span class="count-title">Projects Done</span>
+                </div>
+              </div>
+              
+              <!-- Item -->
+              <div class="col-xs-6 col-sm-3 border-none">
+                <div class="count-number">
+                 768
+                </div>
+                <div class="count-descr">
+                  <span class="count-title">Hours Of Code</span>
+                </div>
               </div>  
-
-              <!-- BLOG ROW -->
-              <div class="row">
-              
-                <div class="col-md-6 pos-l-md-50pc pl-0">
-            			<div class="post2-prev-img">
-                    <a href="blog-single-sidebar-right.html"><img src="images/blog/blog-sect3-post-1.jpg" alt="img"></a>
-                  </div>
-           			</div>
-                
-              	<div class="col-md-6 pos-r-md-50pc pr-0">
-            			<div class="blog-sect3-text-cont">
-                    <div class="pos-v-center">
-                      <div class="post2-prev-title">
-                        <h3 class="font-montserrat"><a href="blog-single-sidebar-right.html">Modern minimalism is the right choice</a></h3>
-                      </div>
-                      <div class="post-prev-info">
-                        Jule 21, 2016<span class="slash-divider">/</span><a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">Michael Doe</a>
-                      </div>
-                    </div>
-            			</div>
-            		</div>
-              
-              </div> 
               
             </div>
-            
-            <!-- VIEW ALL -->
-          	<div class="row">
-          		<div class="col-md-12 blog-sect3-view-all-cont">
-          			<a href="blog-single-sidebar-right.html" ><strong>view all news</strong></a>
-          		</div>
-          	</div>
-              
           </div>
         </div>
         
-        <!-- SLOGAN 1 -->
-        <div class="bg-sl1 p-140-cont ">
-        	<div class="container">
-        		<div class="row">
-        			<div class="col-md-7 col-sm-12"><h3 class="sl1-text">The only way to do great work 
-        		is to love what you do</h3></div>
-        			<div class="col-md-offset-1 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-5 col-xs-7 mt-40 mb-20">
-        	      <img src="images/content/signature.png" alt="img">
-        	    </div>
-        		</div>
-        	</div>
+				<!-- ABOUT US 3 -->
+				<div id="about-us-link" class="page-section pt-100-cont">
+					<div class="container">
+            
+            <div class="row">
+              
+              <div class="col-md-3">
+                <div>
+								  <h2 class="au3-title section-title2 font-light">Our Team</h2>
+								</div>
+                <div class="au3-text">Sed nec pretium velit integer cursus  pretium nulla molestie amet</div>
+                <div class="au3-btn-cont">
+                  <a class="button medium rounded gray" href="about-us.html">VIEW ALL TEAM</a>
+                </div>
+              </div>
+              
+              <div class="col-md-offset-1 col-md-8 text-center wow fadeInUp" data-wow-duration="1s">
+                <img src="images/team/team-all-bw.jpg" alt="img">
+              </div>
+              
+            </div>
+            
+					</div>
         </div>
-
-        <!-- FOOTER 3 FONT MONTSERRAT -->
-        <footer id="footer7" class="page-section pt-95 pb-50">
+        
+        <!-- VIDEO ADS 2 -->
+				<div class="page-section bg-yellow" >
+					<div class="container">
+            <div class="video-ads-text-cont video-ads-text-black clearfix">
+              <span class="video-ads-text">Be Creative</span>
+              <span class="video-ads-a">
+                <a class="popup-youtube mfp-plugin" href="https://www.youtube.com/watch?v=0gv7OC9L2s8">
+                  <span class="icon icon-music-play-button"></span>
+                </a>
+              </span>
+              <span class="video-ads-text">With Elementy</span>
+            </div>
+					</div>
+				</div>
+ 
+        <!-- BLOG SECTION 1 -->
+        <div id="blog-link" class="page-section pt-150-b-110-cont">
+          <div class="container">
+                
+            <div class="mb-50">
+              <h2 class="section-title2 font-light pr-0">Our Blog<a href="blog-right-sidebar.html" class="section-more right">View All</a>
+              </h2>
+            </div>
+            
+            <div class="row">
+              
+              <!-- Post Item 1 -->
+              <div class="col-sm-6 col-md-4 col-lg-4 wow fadeIn pb-70" >
+                  
+                <div class="post-prev-img">
+                  <a href="blog-single-sidebar-right.html"><img src="images/blog/blog-sect3-post-anim.gif" alt="img"></a>
+                </div>
+                  
+                <div class="post-prev-title">
+                  <h3 ><a href="blog-single-sidebar-right.html">User Experience</a></h3>
+                </div>
+                  
+                <div class="post-prev-info">
+                  Jule 21, 2016<span class="slash-divider">/</span><a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">Michael Doe</a>
+                </div>
+                  
+                <div>
+                  Maecenas volutpat, diam enim sagittis uam, id porta ulamis. Sed id dolor consectetur fermentum nibh volutpat, umasnu purus... 
+                </div>
+              
+              </div>
+              
+              <!-- Post Item 2 -->
+              <div class="col-sm-6 col-md-4 col-lg-4 wow fadeIn pb-70" data-wow-delay="200ms" >
+                  
+                <div class="post-prev-img">
+                  <a href="blog-single-sidebar-right.html"><img src="images/blog/blog-sect1-post-1.jpg" alt="img"></a>
+                </div>
+                  
+                <div class="post-prev-title">
+                  <h3 ><a href="blog-single-sidebar-right.html">New Trends In Web Design</a></h3>
+                </div>
+                  
+                <div class="post-prev-info">
+                  Jule 20, 2016<span class="slash-divider">/</span><a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">Michael Doe</a>
+                </div>
+                  
+                <div >
+                  Recusandae, nostrum, diam enim sagittis uam, id porta ulamis. Sed id dolor consectetur fermentum nibh laudantium magnam...
+                </div>
+              
+              </div>
+              
+              <!-- Post Item 3 -->
+              <div class="col-sm-6 col-md-4 col-lg-4 wow fadeIn pb-70" data-wow-delay="400ms" >
+                  
+                <div class="post-prev-img">
+                  <a href="blog-single-sidebar-right.html"><img src="images/blog/blog-sect1-post-2.jpg" alt="img"></a>
+                </div>
+                  
+                <div class="post-prev-title">
+                  <h3><a href="blog-single-sidebar-right.html">The Sound Of Life</a></h3>
+                </div>
+                  
+                <div class="post-prev-info">
+                  Jule 16, 2016<span class="slash-divider">/</span><a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">Michael Doe</a>
+                </div>
+                  
+                <div>
+                  Cumque culpa provident, diam enim sagittis uam, id porta ulamis. Sed id dolor consectetur fermentum nibh commodi assumenda...
+                </div>
+              
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- NEWS LETTER -->
+        <div class="page-section nl-cont">
+          <div class="container">
+            <div class="col-sm-8">
+            	<h2 class="section-title2 font-light pr-0 nl-title">Newsletter</h2>
+            </div>
+            <div class="col-sm-4">
+            	<div class="relative" >
+            	  <div id="mc_embed_signup" class="nl-form-container clearfix">
+            	    <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform validate" target="_blank" novalidate>   <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -->
+            	      <input type="email" value="" name="EMAIL" class="email nl-email-input" id="mce-EMAIL" placeholder="Email address" required>
+            	      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            	      <div style="position: absolute; left: -5000px;"><input type="text" name="b_ba37086d08bdc9f56f3592af0_e38247f7cc" tabindex="-1" value=""></div>
+            	          
+            	      <button id="mc-embedded-subscribe" class="nl2-btn" type="submit" name="subscribe">
+            	            <span class="icon icon-arrows-slim-right"></span>
+            	          </button>
+            	    </form>
+            	    <div id="notification_container"  ></div>
+            	  </div>
+            	</div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- FOOTER 4 BLACK WITH TWITTER FEED -->
+        <footer id="footer4" class="page-section pt-95 pb-50 footer2-black">
           <div class="container">
             <div class="row">
             
               <div class="col-md-3 col-sm-3 widget">
                 <div class="logo-footer-cont">
                   <a href="index.html">
-                    <img class="logo-footer" src="images/logo-footer.png" alt="logo">
+                    <img class="logo-footer" src="images/logo-footer-white.png" alt="logo">
                   </a>
                 </div>
                 <div class="footer2-text-cont">
@@ -1528,14 +1528,14 @@
                   1-800-312-2121<br>
                   <a class="a-text" href="mailto:info@haswell.com">info@elementy.com</a>
                 </div>
-                <div class="footer2-text-cont">
-                  <a class="mfp-plugin popup-gmaps" href="https://maps.google.com/maps?q=555+California+Street+Building,+California+Street,+San+Francisco,&amp;hl=en&amp;t=v&amp;hnear=555+California+Street+Building,+California+Street,+San+Francisco">Google Map</a>
+                <div class="footer2-text-cont a-text-main-cont">
+                  <a class="popup-gmaps mfp-plugin font-poppins" href="https://maps.google.com/maps?q=555+California+Street+Building,+California+Street,+San+Francisco,&amp;hl=en&amp;t=v&amp;hnear=555+California+Street+Building,+California+Street,+San+Francisco">Open Map</a>
                 </div>
               </div>
               
-              <div class="col-md-3 col-sm-3 widget">
-                <h4 class="font-montserrat"><strong>Navigate</strong></h4>
-                <ul class="links-list bold a-text-cont">
+              <div class="col-md-2 col-sm-2 widget">
+                <h4>Navigate</h4>
+                <ul class="links-list a-text-cont a-text-main-cont font-poppins">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="shortcodes.html">Shortcodes</a></li>
                   <li><a href="services.html">Services</a></li>
@@ -1547,8 +1547,8 @@
               </div>
               
               <div class="col-md-3 col-sm-3 widget">
-                <h4 class="font-montserrat"><strong>About Us</strong></h4>
-                <ul class="links-list a-text-cont" >
+                <h4>Insights</h4>
+                <ul class="links-list a-text-cont font-poppins" >
                   <li><a href="about-us.html">Company</a></li>
                   <li><a href="services.html">What We Do</a></li>
                   <li><a href="https://help.market.envato.com/hc/en-us">Help Center</a></li>
@@ -1557,26 +1557,10 @@
                 </ul>
               </div>
               
-              <div class="col-md-3 col-sm-3 widget">
-                <h4 class="font-montserrat"><strong>Newsletter</strong></h4>
-                
-                <!-- NEWS LETTER 2 FONT MONTSERRAT -->
-                <div class="relative " >
-                  <div id="mc_embed_signup" class="nl-form-container clearfix">
-                    <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform2 validate" target="_blank" novalidate>   <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -->
-                      <input type="email" value="" name="EMAIL" class="email nl2-email-input font-montserrat" id="mce-EMAIL" placeholder="Email address" required>
-                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div style="position: absolute; left: -5000px;"><input type="text" name="b_ba37086d08bdc9f56f3592af0_e38247f7cc" tabindex="-1" value=""></div>
-
-                      <button id="mc-embedded-subscribe" class="nl2-btn" type="submit" name="subscribe">
-                        <span class="icon icon-arrows-slim-right"></span>
-                      </button>
-                      
-                    </form>
-                    <div id="notification_container"  ></div>
-                  </div>
-                </div>                  
-                
+              <!-- TWITTER FEEDS -->
+              <div class="col-md-4 col-sm-4 widget">
+                <h4>Recent Tweets</h4>
+                <div id="twitter-feeds"></div>
               </div>
             
             </div>    
@@ -1619,12 +1603,15 @@
     <script src="js/bootstrap.min.js"></script>		
 
 		<!-- MAGNIFIC POPUP -->
-		<script src='js/jquery.magnific-popup.min.js'></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
     
     <!-- PORTFOLIO SCRIPTS -->
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    
+    <!-- COUNTER -->
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
     
     <!-- APPEAR -->    
     <script type="text/javascript" src="js/jquery.appear.js"></script>
@@ -1632,8 +1619,8 @@
     <!-- OWL CAROUSEL -->    
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     
-    <!-- PARALLAX -->    
-    <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+    <!-- JQUERY TWEETS -->
+		<script src="js/twitter/jquery.tweet.js"></script> 
     
     <!-- MAIN SCRIPT -->
 		<script src="js/main.js"></script>
@@ -1643,6 +1630,8 @@
     </script>
     <script src="revo-slider/js/jquery.themepunch.revolution.min.js" type="text/javascript">
     </script>
+
+    <script src="js/typer.js"></script>
     
     <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
       (Load Extensions only on Local File Systems ! 
@@ -1662,19 +1651,50 @@
     <script type="text/javascript">
       jQuery(document).ready(function() {
           
-        jQuery("#rev_slider_280_1").show().revolution({
-          sliderType: "hero",
+        jQuery("#rev_slider_202_1").show().revolution({
+          sliderType: "standard",
           jsFileLocation: "revo-slider/js/",
           sliderLayout: "fullscreen",
           dottedOverlay: "none",
           delay: 9000,
-          /*navigation: {},*/
+          navigation: {
+            keyboardNavigation: "off",
+            keyboard_direction: "horizontal",
+            mouseScrollNavigation: "off",
+            onHoverStop: "off",
+            touch: {
+                touchenabled: "on",
+                swipe_threshold: 75,
+                swipe_min_touches: 50,
+                swipe_direction: "horizontal",
+                drag_block_vertical: false
+            },
+            arrows: {
+              style: "hermes",
+              enable: true,
+              hide_onmobile: true,
+              hide_onleave: true,
+              tmp: '<div class="tp-arr-allwrapper">	<div class="tp-arr-imgholder"></div>	<div class="tp-arr-titleholder">{{title}}</div>	</div>',
+              left: {
+                h_align: "left",
+                v_align: "center",
+                h_offset: 0,
+                v_offset: 0
+              },
+              right: {
+                h_align: "right",
+                v_align: "center",
+                h_offset: 0,
+                v_offset: 0
+              }
+            },
+          },
           responsiveLevels: [1240, 1024, 778, 480],
           visibilityLevels: [1240, 1024, 778, 480],
           gridwidth: [1240, 1024, 778, 480],
           gridheight: [868, 768, 960, 720],
           lazyType: "none",
-          parallax: {
+           parallax: {
             type: "off",
             origo: "slidercenter",
             speed: 1000,
@@ -1684,6 +1704,10 @@
           },
           shadow: 0,
           spinner: "spinner2",
+          stopLoop: "on",
+          stopAfterLoops: 0,
+          stopAtSlide: 1,
+          shuffle: "off",
           autoHeight: "off",
           fullScreenAutoWidth: "off",
           fullScreenAlignForce: "off",
@@ -1697,6 +1721,7 @@
           debugMode: false,
           fallbacks: {
             simplifyAll: "off",
+            nextSlideOnWindowFocus: "off",
             disableFocusListener: false,
           }
         });
